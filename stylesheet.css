@@ -1,0 +1,11 @@
+body {
+background-color: black;
+font-family: yellow,'Sofia Sans Condensed', sans-serif;
+}
+
+#listaitens {
+    position: relative;
+    color: yellow;
+    font-size: 40px;
+    display: inline-block;
+}
