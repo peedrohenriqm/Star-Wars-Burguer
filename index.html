@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,26 +11,21 @@
 
 <body>
     
-    <header>
-        
-    </header>
-    
-    <main>
-        <div id="botoes">
-            <button id="burguercarne" data-carne="Hambúrguer de Carne" value="carne">Hambúrguer de Carne</button>
-            <button id="burguerfrango" data-frango="Hambúrguer de Frango" value="frango">Hambúrguer de Frango</button>
-            <button id="burguerkids" data-kids="Kids" value="kids">Kids</button>
+   <section class="cardapio">
+        <div class="title">
+            <h1>Cardápio</h1>
         </div>
-        <div id="hamburguer">
-
+        <div id="grupo-botoes">
+            <button class="botao" type="button" data-id="todos">Todos</button>
+            <button class="botao" type="button" data-id="carne">Carne</button>
+            <button class="botao" type="button" data-id="frango">Frango</button>
+            <button class="botao" type="button" data-id="kids">Kids</button> 
         </div>
-    </main>
-    
-    <footer>
-
-    </footer>
+    </section>
+        <div id="sessao-central">
+        </div>
     
     
-    <script src="main.js"></script>   
+    <script src="main.js"></script> 
 </body>
 </html>
