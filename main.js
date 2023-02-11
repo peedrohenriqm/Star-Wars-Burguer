@@ -39,10 +39,9 @@ const cardapio = [
 
 const conteudoCentral = document.querySelector(".conteudo-central");
 
-
 function mostraNaTela (listaCardapio) {
-    conteudoCentral.innerHTML = "";
-    cardapio.forEach(item => {
+    conteudoCentral.innerHTML = ""
+    listaCardapio.forEach(item => {
        conteudoCentral.innerHTML += `
        <div id=${item.nome}>
        <h1>${item.nome}</h1>
