@@ -13,10 +13,10 @@ const cardapio = [
         preco: 15,
         descricao:"delicia, cara"
     },
-    /* {
+    {
         id: 2,
         nome: "ioda",
-        categoria: "carne",
+        categoria: "frango",
         preco: 25,
         descricao:"delicia, cara"
     },
@@ -33,27 +33,27 @@ const cardapio = [
         categoria: "kids",
         preco: 40,
         descricao:"delicia, cara"
-    } */
+    }
 
 ];
 
-const sessaoCentral = document.getElementById("sessao-central");
-const botoes = document.getElementById("grupo-botoes")
+const conteudoCentral = document.querySelector(".conteudo-central");
 
-const itensMenu = cardapio.map((burguer)=>{
-    exibirBurguerNaTela(cardapio);
-});
 
-function exibirBurguerNaTela(listaDeBurguer){
-    listaDeBurguer.forEach(burguer => {
-        sessaoCentral.innerHTML+= `
-            <div class="burguer">
-                <p>${burguer.nome}</p>
-                <p class="preco">${burguer.preco}</p>
-                <p class="burguer-text">${burguer.descricao}</p>
-            </div>`;
-    });
+function mostraNaTela (listaCardapio) {
+    conteudoCentral.innerHTML = "";
+    cardapio.forEach(item => {
+       conteudoCentral.innerHTML += `
+       <div id=${item.nome}>
+       <h1>${item.nome}</h1>
+       <h1>${item.descricao}</h1>
+       <h1>${item.preco}</h1>
+       </div>
+       ` 
+    })
+    
 }
+
 
 
 
