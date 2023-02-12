@@ -1,10 +1,29 @@
 body {
-font-family: yellow,'Sofia Sans Condensed', sans-serif;
+font-family: 'Sofia Sans Condensed', sans-serif;
+background-color: black;
+}
+h1 {
+    color: yellow;
 }
 
-#listaitens {
+.btn {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 10px;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 10px;
     position: relative;
-    color: yellow;
-    font-size: 40px;
-    display: inline-block;
+    top: 50%;
+    left: 35%;  
+}
+
+.btn:hover {
+    background-color: yellow;
+    opacity: 20%;
+}
+
+.conteudo-central {
+    text-align: center;
 }

@@ -1,11 +1,14 @@
 
-const botoes = document.querySelectorAll(".btn")
+const botoes = document.querySelectorAll(".btn");
 
-botoes.forEach(btn => btn.addEventListener("click", filtrarBurguer))
+botoes.forEach(botao =>botao.addEventListener("click", filtraIntens));
 
-function filtrarBurguer(){
-    let elementoBtn = document.getElementById(this.id)
-    let categoria = elementoBtn.value;
-    let cardapioFiltrado = cardapio.filter(item=> item.categoria == categoria)
-    mostraNaTela(cardapioFiltrado);
+function filtraIntens () {
+    let botaoId = document.getElementById(this.id)
+    let categoriaItem = botaoId.value;
+    let itensFiltrados = cardapio.filter( item => item.categoria == categoriaItem );
+    mostraNaTela(itensFiltrados);
+    if(categoriaItem == "tudo") {
+        mostraNaTela(cardapio);
+    }
 }
